@@ -1,0 +1,155 @@
+E:\移动开发\Smobiler\问卷调查\问卷调查\bin\Debug\问卷调查.exe.config
+E:\移动开发\Smobiler\问卷调查\问卷调查\bin\Debug\问卷调查.exe
+E:\移动开发\Smobiler\问卷调查\问卷调查\bin\Debug\问卷调查.pdb
+E:\移动开发\Smobiler\问卷调查\问卷调查\bin\Debug\Smobiler.Core.Controls.dll
+E:\移动开发\Smobiler\问卷调查\问卷调查\bin\Debug\Smobiler.Core.dll
+E:\移动开发\Smobiler\问卷调查\问卷调查\bin\Debug\Smobiler.Plugins.dll
+E:\移动开发\Smobiler\问卷调查\问卷调查\bin\Debug\Smobiler.Utility.dll
+E:\移动开发\Smobiler\问卷调查\问卷调查\bin\Debug\Smobiler.Core.xml
+E:\移动开发\Smobiler\问卷调查\问卷调查\bin\Debug\Smobiler.Core.Controls.xml
+E:\移动开发\Smobiler\问卷调查\问卷调查\bin\Debug\Smobiler.Plugins.xml
+E:\移动开发\Smobiler\问卷调查\问卷调查\obj\Debug\frmGenerateQRcode.resources
+E:\移动开发\Smobiler\问卷调查\问卷调查\obj\Debug\frmHelp.resources
+E:\移动开发\Smobiler\问卷调查\问卷调查\obj\Debug\frmMain.resources
+E:\移动开发\Smobiler\问卷调查\问卷调查\obj\Debug\frmSetting.resources
+E:\移动开发\Smobiler\问卷调查\问卷调查\obj\Debug\问卷调查.Pages.LoginPage.resources
+E:\移动开发\Smobiler\问卷调查\问卷调查\obj\Debug\问卷调查.Pages.MainPage.resources
+E:\移动开发\Smobiler\问卷调查\问卷调查\obj\Debug\问卷调查.Properties.Resources.resources
+E:\移动开发\Smobiler\问卷调查\问卷调查\obj\Debug\问卷调查.csproj.GenerateResource.Cache
+E:\移动开发\Smobiler\问卷调查\问卷调查\obj\Debug\问卷调查.exe
+E:\移动开发\Smobiler\问卷调查\问卷调查\obj\Debug\问卷调查.pdb
+E:\移动开发\Smobiler\问卷调查\问卷调查\obj\Debug\问卷调查.csprojResolveAssemblyReference.cache
+E:\移动开发\Smobiler\问卷调查\问卷调查\obj\Debug\问卷调查.Controls.SmobilerUserControl1.resources
+E:\移动开发\Smobiler\问卷调查\问卷调查\obj\Debug\问卷调查.Controls.MenuLeft.resources
+E:\移动开发\Smobiler\问卷调查\问卷调查\bin\Debug\EntityFramework.dll
+E:\移动开发\Smobiler\问卷调查\问卷调查\bin\Debug\EntityFramework.SqlServer.dll
+E:\移动开发\Smobiler\问卷调查\问卷调查\bin\Debug\EntityFramework.xml
+E:\移动开发\Smobiler\问卷调查\问卷调查\bin\Debug\EntityFramework.SqlServer.xml
+E:\移动开发\Smobiler\问卷调查\问卷调查\bin\Debug\zh-Hans\EntityFramework.resources.dll
+E:\YDKF\Smobiler\问卷调查\问卷调查\bin\Debug\问卷调查.exe.config
+E:\YDKF\Smobiler\问卷调查\问卷调查\obj\Debug\问卷调查.exe
+E:\YDKF\Smobiler\问卷调查\问卷调查\obj\Debug\问卷调查.pdb
+E:\移动开发\Smobiler\问卷调查\问卷调查\obj\Debug\问卷调查.Pages.MyPage.resources
+E:\移动开发\Smobiler\问卷调查\问卷调查\obj\Debug\问卷调查.Pages.InitiatingQuestionnaire.resources
+E:\questionnaire_app\问卷调查\bin\Debug\问卷调查.exe.config
+E:\questionnaire_app\问卷调查\bin\Debug\问卷调查.exe
+E:\questionnaire_app\问卷调查\bin\Debug\问卷调查.pdb
+E:\questionnaire_app\问卷调查\bin\Debug\EntityFramework.dll
+E:\questionnaire_app\问卷调查\bin\Debug\EntityFramework.SqlServer.dll
+E:\questionnaire_app\问卷调查\bin\Debug\Smobiler.Core.Controls.dll
+E:\questionnaire_app\问卷调查\bin\Debug\Smobiler.Core.dll
+E:\questionnaire_app\问卷调查\bin\Debug\Smobiler.Device.dll
+E:\questionnaire_app\问卷调查\bin\Debug\Smobiler.Plugins.dll
+E:\questionnaire_app\问卷调查\bin\Debug\Smobiler.Utility.dll
+E:\questionnaire_app\问卷调查\bin\Debug\EntityFramework.xml
+E:\questionnaire_app\问卷调查\bin\Debug\EntityFramework.SqlServer.xml
+E:\questionnaire_app\问卷调查\bin\Debug\Smobiler.Device.xml
+E:\questionnaire_app\问卷调查\bin\Debug\Smobiler.Core.xml
+E:\questionnaire_app\问卷调查\bin\Debug\Smobiler.Core.Controls.xml
+E:\questionnaire_app\问卷调查\bin\Debug\Smobiler.Plugins.xml
+E:\questionnaire_app\问卷调查\bin\Debug\zh-Hans\EntityFramework.resources.dll
+E:\questionnaire_app\问卷调查\obj\Debug\问卷调查.Controls.MenuLeft.resources
+E:\questionnaire_app\问卷调查\obj\Debug\frmGenerateQRcode.resources
+E:\questionnaire_app\问卷调查\obj\Debug\frmHelp.resources
+E:\questionnaire_app\问卷调查\obj\Debug\frmMain.resources
+E:\questionnaire_app\问卷调查\obj\Debug\frmSetting.resources
+E:\questionnaire_app\问卷调查\obj\Debug\问卷调查.Pages.InitiatingQuestion.InitiatingQuestionnaire.resources
+E:\questionnaire_app\问卷调查\obj\Debug\问卷调查.Pages.InitiatingQuestion.InitiatingQuestionnaireControl.resources
+E:\questionnaire_app\问卷调查\obj\Debug\问卷调查.Pages.LoginPage.resources
+E:\questionnaire_app\问卷调查\obj\Debug\问卷调查.Pages.MainPage.resources
+E:\questionnaire_app\问卷调查\obj\Debug\问卷调查.Pages.MyPage.resources
+E:\questionnaire_app\问卷调查\obj\Debug\问卷调查.Pages.QuestionnaireListFolder.EditQuestionnaire.resources
+E:\questionnaire_app\问卷调查\obj\Debug\问卷调查.Pages.QuestionnaireListFolder.EditQuestionnaireFolder.QuestionnaireTypeFolder.QuestionnaireType.resources
+E:\questionnaire_app\问卷调查\obj\Debug\问卷调查.Pages.PaperList.resources
+E:\questionnaire_app\问卷调查\obj\Debug\问卷调查.Pages.QuestionnaireListFolder.QuestionnaireListControl.resources
+E:\questionnaire_app\问卷调查\obj\Debug\问卷调查.Pages.QuestionnaireListFolder.sendQ.SedQuestion.resources
+E:\questionnaire_app\问卷调查\obj\Debug\问卷调查.Properties.Resources.resources
+E:\questionnaire_app\问卷调查\obj\Debug\问卷调查.csproj.GenerateResource.Cache
+E:\questionnaire_app\问卷调查\obj\Debug\问卷调查.exe
+E:\questionnaire_app\问卷调查\obj\Debug\问卷调查.pdb
+E:\questionnaire_app\问卷调查\obj\Debug\问卷调查.csprojResolveAssemblyReference.cache
+E:\git仓库\问卷调查APP\问卷调查\bin\Debug\问卷调查.exe.config
+E:\git仓库\问卷调查APP\问卷调查\bin\Debug\问卷调查.exe
+E:\git仓库\问卷调查APP\问卷调查\bin\Debug\问卷调查.pdb
+E:\git仓库\问卷调查APP\问卷调查\bin\Debug\EntityFramework.dll
+E:\git仓库\问卷调查APP\问卷调查\bin\Debug\EntityFramework.SqlServer.dll
+E:\git仓库\问卷调查APP\问卷调查\bin\Debug\Smobiler.Core.Controls.dll
+E:\git仓库\问卷调查APP\问卷调查\bin\Debug\Smobiler.Core.dll
+E:\git仓库\问卷调查APP\问卷调查\bin\Debug\Smobiler.Device.dll
+E:\git仓库\问卷调查APP\问卷调查\bin\Debug\Smobiler.Plugins.dll
+E:\git仓库\问卷调查APP\问卷调查\bin\Debug\Smobiler.Utility.dll
+E:\git仓库\问卷调查APP\问卷调查\bin\Debug\EntityFramework.xml
+E:\git仓库\问卷调查APP\问卷调查\bin\Debug\EntityFramework.SqlServer.xml
+E:\git仓库\问卷调查APP\问卷调查\bin\Debug\Smobiler.Device.xml
+E:\git仓库\问卷调查APP\问卷调查\bin\Debug\Smobiler.Core.xml
+E:\git仓库\问卷调查APP\问卷调查\bin\Debug\Smobiler.Core.Controls.xml
+E:\git仓库\问卷调查APP\问卷调查\bin\Debug\Smobiler.Plugins.xml
+E:\git仓库\问卷调查APP\问卷调查\bin\Debug\zh-Hans\EntityFramework.resources.dll
+E:\git仓库\问卷调查APP\问卷调查\obj\Debug\问卷调查.Controls.MenuLeft.resources
+E:\git仓库\问卷调查APP\问卷调查\obj\Debug\frmGenerateQRcode.resources
+E:\git仓库\问卷调查APP\问卷调查\obj\Debug\frmHelp.resources
+E:\git仓库\问卷调查APP\问卷调查\obj\Debug\frmMain.resources
+E:\git仓库\问卷调查APP\问卷调查\obj\Debug\frmSetting.resources
+E:\git仓库\问卷调查APP\问卷调查\obj\Debug\问卷调查.Pages.EditQuestionnairePages.Controls.MultipleChoiceControl.resources
+E:\git仓库\问卷调查APP\问卷调查\obj\Debug\问卷调查.Pages.EditQuestionnairePages.Controls.SingleChoiceControl.resources
+E:\git仓库\问卷调查APP\问卷调查\obj\Debug\问卷调查.Pages.QuestionnaireListFolder.EditQuestionnairePage.resources
+E:\git仓库\问卷调查APP\问卷调查\obj\Debug\问卷调查.Pages.QuestionnaireListFolder.QuestionnaireTypeList.resources
+E:\git仓库\问卷调查APP\问卷调查\obj\Debug\问卷调查.Pages.InitiatingQuestion.InitiatingQuestionnaire.resources
+E:\git仓库\问卷调查APP\问卷调查\obj\Debug\问卷调查.Pages.InitiatingQuestion.InitiatingQuestionnaireControl.resources
+E:\git仓库\问卷调查APP\问卷调查\obj\Debug\问卷调查.Pages.LoginPage.resources
+E:\git仓库\问卷调查APP\问卷调查\obj\Debug\问卷调查.Pages.MainPage.resources
+E:\git仓库\问卷调查APP\问卷调查\obj\Debug\问卷调查.Pages.MyPage.resources
+E:\git仓库\问卷调查APP\问卷调查\obj\Debug\问卷调查.Pages.QuestionnaireListFolder.EditQuestionnaire.resources
+E:\git仓库\问卷调查APP\问卷调查\obj\Debug\问卷调查.Pages.QuestionnaireListFolder.EditQuestionnaireFolder.QuestionnaireTypeFolder.QuestionnaireType.resources
+E:\git仓库\问卷调查APP\问卷调查\obj\Debug\问卷调查.Pages.PaperList.resources
+E:\git仓库\问卷调查APP\问卷调查\obj\Debug\问卷调查.Pages.QuestionnaireListFolder.QuestionnaireListControl.resources
+E:\git仓库\问卷调查APP\问卷调查\obj\Debug\问卷调查.Pages.QuestionnaireListFolder.sendQ.SedQuestion.resources
+E:\git仓库\问卷调查APP\问卷调查\obj\Debug\问卷调查.Properties.Resources.resources
+E:\git仓库\问卷调查APP\问卷调查\obj\Debug\问卷调查.csproj.GenerateResource.Cache
+E:\git仓库\问卷调查APP\问卷调查\obj\Debug\问卷调查.exe
+E:\git仓库\问卷调查APP\问卷调查\obj\Debug\问卷调查.pdb
+G:\MY_LJL-questionnaire_app-master (1)\questionnaire_app\问卷调查\bin\Debug\问卷调查.exe.config
+G:\MY_LJL-questionnaire_app-master (1)\questionnaire_app\问卷调查\obj\Debug\问卷调查.exe
+G:\MY_LJL-questionnaire_app-master (1)\questionnaire_app\问卷调查\obj\Debug\问卷调查.pdb
+G:\MY_LJL-questionnaire_app-master (1)\questionnaire_app\问卷调查\bin\Debug\问卷调查.exe
+G:\MY_LJL-questionnaire_app-master (1)\questionnaire_app\问卷调查\bin\Debug\问卷调查.pdb
+G:\MY_LJL-questionnaire_app-master (1)\questionnaire_app\问卷调查\bin\Debug\EntityFramework.dll
+G:\MY_LJL-questionnaire_app-master (1)\questionnaire_app\问卷调查\bin\Debug\EntityFramework.SqlServer.dll
+G:\MY_LJL-questionnaire_app-master (1)\questionnaire_app\问卷调查\bin\Debug\Smobiler.Core.Controls.dll
+G:\MY_LJL-questionnaire_app-master (1)\questionnaire_app\问卷调查\bin\Debug\Smobiler.Core.dll
+G:\MY_LJL-questionnaire_app-master (1)\questionnaire_app\问卷调查\bin\Debug\Smobiler.Device.dll
+G:\MY_LJL-questionnaire_app-master (1)\questionnaire_app\问卷调查\bin\Debug\Smobiler.Plugins.dll
+G:\MY_LJL-questionnaire_app-master (1)\questionnaire_app\问卷调查\bin\Debug\Smobiler.Utility.dll
+G:\MY_LJL-questionnaire_app-master (1)\questionnaire_app\问卷调查\bin\Debug\EntityFramework.xml
+G:\MY_LJL-questionnaire_app-master (1)\questionnaire_app\问卷调查\bin\Debug\EntityFramework.SqlServer.xml
+G:\MY_LJL-questionnaire_app-master (1)\questionnaire_app\问卷调查\bin\Debug\Smobiler.Device.xml
+G:\MY_LJL-questionnaire_app-master (1)\questionnaire_app\问卷调查\bin\Debug\Smobiler.Core.xml
+G:\MY_LJL-questionnaire_app-master (1)\questionnaire_app\问卷调查\bin\Debug\Smobiler.Core.Controls.xml
+G:\MY_LJL-questionnaire_app-master (1)\questionnaire_app\问卷调查\bin\Debug\Smobiler.Plugins.xml
+G:\MY_LJL-questionnaire_app-master (1)\questionnaire_app\问卷调查\bin\Debug\zh-Hans\EntityFramework.resources.dll
+G:\MY_LJL-questionnaire_app-master (1)\questionnaire_app\问卷调查\obj\Debug\问卷调查.Controls.MenuLeft.resources
+G:\MY_LJL-questionnaire_app-master (1)\questionnaire_app\问卷调查\obj\Debug\frmGenerateQRcode.resources
+G:\MY_LJL-questionnaire_app-master (1)\questionnaire_app\问卷调查\obj\Debug\frmHelp.resources
+G:\MY_LJL-questionnaire_app-master (1)\questionnaire_app\问卷调查\obj\Debug\frmMain.resources
+G:\MY_LJL-questionnaire_app-master (1)\questionnaire_app\问卷调查\obj\Debug\frmSetting.resources
+G:\MY_LJL-questionnaire_app-master (1)\questionnaire_app\问卷调查\obj\Debug\问卷调查.Pages.EditQuestionnairePages.Controls.MultipleChoiceControl.resources
+G:\MY_LJL-questionnaire_app-master (1)\questionnaire_app\问卷调查\obj\Debug\问卷调查.Pages.EditQuestionnairePages.Controls.SingleChoiceControl.resources
+G:\MY_LJL-questionnaire_app-master (1)\questionnaire_app\问卷调查\obj\Debug\问卷调查.Pages.QuestionnaireListFolder.EditQuestionnairePage.resources
+G:\MY_LJL-questionnaire_app-master (1)\questionnaire_app\问卷调查\obj\Debug\问卷调查.Pages.QuestionnaireFolder.EditQuestionnairePages.QuestionnaireTypeList.resources
+G:\MY_LJL-questionnaire_app-master (1)\questionnaire_app\问卷调查\obj\Debug\问卷调查.Pages.QuestionnaireListFolder.QuestionTypeList.resources
+G:\MY_LJL-questionnaire_app-master (1)\questionnaire_app\问卷调查\obj\Debug\问卷调查.Pages.InitiatingQuestion.InitiatingQuestionnaire.resources
+G:\MY_LJL-questionnaire_app-master (1)\questionnaire_app\问卷调查\obj\Debug\问卷调查.Pages.InitiatingQuestion.InitiatingQuestionnaireControl.resources
+G:\MY_LJL-questionnaire_app-master (1)\questionnaire_app\问卷调查\obj\Debug\问卷调查.Pages.LoginPage.resources
+G:\MY_LJL-questionnaire_app-master (1)\questionnaire_app\问卷调查\obj\Debug\问卷调查.Pages.MainPage.resources
+G:\MY_LJL-questionnaire_app-master (1)\questionnaire_app\问卷调查\obj\Debug\问卷调查.Pages.MyPage.resources
+G:\MY_LJL-questionnaire_app-master (1)\questionnaire_app\问卷调查\obj\Debug\问卷调查.Pages.QuestionnaireList.resources
+G:\MY_LJL-questionnaire_app-master (1)\questionnaire_app\问卷调查\obj\Debug\问卷调查.Pages.QuestionnaireListFolder.QuestionnaireListControl.resources
+G:\MY_LJL-questionnaire_app-master (1)\questionnaire_app\问卷调查\obj\Debug\问卷调查.Pages.QuestionnaireFolder.Questionnaire_Answer.resources
+G:\MY_LJL-questionnaire_app-master (1)\questionnaire_app\问卷调查\obj\Debug\问卷调查.Pages.QuestionnaireFolder.Questionnaire_Answer_Control.resources
+G:\MY_LJL-questionnaire_app-master (1)\questionnaire_app\问卷调查\obj\Debug\问卷调查.Pages.QuestionnaireListFolder.sendQ.SedQuestion.resources
+G:\MY_LJL-questionnaire_app-master (1)\questionnaire_app\问卷调查\obj\Debug\问卷调查.Properties.Resources.resources
+G:\MY_LJL-questionnaire_app-master (1)\questionnaire_app\问卷调查\obj\Debug\问卷调查.csproj.GenerateResource.Cache
+G:\MY_LJL-questionnaire_app-master (1)\questionnaire_app\问卷调查\obj\Debug\问卷调查.Pages.QuestionnaireFolder.EditQuestionnairePages.AnswerPage.resources
+G:\MY_LJL-questionnaire_app-master (1)\questionnaire_app\问卷调查\obj\Debug\问卷调查.Pages.QuestionnaireFolder.EditQuestionnairePages.Controls.AnswerMultipleChoiceControl.resources
+G:\MY_LJL-questionnaire_app-master (1)\questionnaire_app\问卷调查\obj\Debug\问卷调查.Pages.QuestionnaireFolder.EditQuestionnairePages.Controls.AnswerSingleChoiceControl.resources
+G:\MY_LJL-questionnaire_app-master (1)\questionnaire_app\问卷调查\obj\Debug\问卷调查.csprojResolveAssemblyReference.cache

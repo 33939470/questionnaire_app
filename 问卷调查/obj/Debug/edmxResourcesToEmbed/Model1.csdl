@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="paper_QuestionnaireModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="paper_QuestionnaireEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="MenuInfo" EntityType="paper_QuestionnaireModel.MenuInfo" />
+    <EntitySet Name="UserRole" EntityType="paper_QuestionnaireModel.UserRole" />
+    <EntitySet Name="UserInfoSet" EntityType="paper_QuestionnaireModel.UserInfo" />
+    <EntitySet Name="QuestionnaireInfo" EntityType="paper_QuestionnaireModel.QuestionnaireInfo" />
+    <EntitySet Name="QuestionType" EntityType="paper_QuestionnaireModel.QuestionType" />
+    <EntitySet Name="QuestionUrl" EntityType="paper_QuestionnaireModel.QuestionUrl" />
+    <EntitySet Name="QuestionnaireDetailInfo" EntityType="paper_QuestionnaireModel.QuestionnaireDetailInfo" />
+    <EntitySet Name="QuestionnaireTypeInfo" EntityType="paper_QuestionnaireModel.QuestionnaireTypeInfo" />
+  </EntityContainer>
+  <EntityType Name="MenuInfo">
+    <Key>
+      <PropertyRef Name="MenuID" />
+    </Key>
+    <Property Name="MenuID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MenuName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="State" Type="Int32" />
+    <Property Name="ParentID" Type="Int32" />
+    <Property Name="Portrait" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UserId" Type="Int32" />
+    <Property Name="RoleTypeID" Type="Int32" />
+    <Property Name="leven" Type="Int32" />
+  </EntityType>
+  <EntityType Name="UserRole">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserID" Type="Int32" />
+    <Property Name="RoleTypeID" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UserInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="userName" />
+      <PropertyRef Name="passWord" />
+      <PropertyRef Name="type" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Id_Guid" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="userName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="passWord" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="type" Type="Int32" Nullable="false" />
+    <Property Name="RoleID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="QuestionnaireInfo">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="PaperType" Type="Int32" Nullable="false" />
+    <Property Name="State" Type="Int32" />
+    <Property Name="CreateTime" Type="DateTime" Precision="3" />
+    <Property Name="CreateUserId" Type="Int32" />
+    <Property Name="PaperCount" Type="Int32" />
+  </EntityType>
+  <EntityType Name="QuestionType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="typeName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="leven" Type="Int32" />
+    <Property Name="parentTypeId" Type="Int32" />
+    <Property Name="state" Type="Int32" />
+  </EntityType>
+  <EntityType Name="QuestionUrl">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="Qid" />
+      <PropertyRef Name="url" />
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Qid" Type="Int32" Nullable="false" />
+    <Property Name="url" Type="String" Nullable="false" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="QuestionnaireDetailInfo">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PaperType" Type="Int32" Nullable="false" />
+    <Property Name="probType" Type="Int32" Nullable="false" />
+    <Property Name="State" Type="Int32" Nullable="false" />
+    <Property Name="QuestionnaireInfoId" Type="Int32" Nullable="false" />
+    <Property Name="Content" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Answer" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="OptionA" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="OptionB" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="OptionC" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="OptionD" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="OptionE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="OptionF" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="number" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="QuestionnaireTypeInfo">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="describe" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="state" Type="Int32" />
+    <Property Name="CreateTime" Type="DateTime" Precision="3" />
+    <Property Name="MenuInfoId" Type="Int32" />
+    <Property Name="portrait" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+</Schema>

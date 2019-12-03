@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="paper_QuestionnaireModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“paper_Questionnaire.dbo.MenuInfo”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="MenuInfo">
+    <Key>
+      <PropertyRef Name="MenuID" />
+    </Key>
+    <Property Name="MenuID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MenuName" Type="varchar" MaxLength="50" />
+    <Property Name="State" Type="int" />
+    <Property Name="ParentID" Type="int" />
+    <Property Name="Portrait" Type="varchar" MaxLength="50" />
+    <Property Name="UserId" Type="int" />
+    <Property Name="RoleTypeID" Type="int" />
+    <Property Name="leven" Type="int" />
+  </EntityType>
+  <EntityType Name="QuestionnaireDetailInfo">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PaperType" Type="int" Nullable="false" />
+    <Property Name="probType" Type="int" Nullable="false" />
+    <Property Name="State" Type="int" Nullable="false" />
+    <Property Name="QuestionnaireInfoId" Type="int" Nullable="false" />
+    <Property Name="Content" Type="text" />
+    <Property Name="Answer" Type="varchar" MaxLength="500" />
+    <Property Name="OptionA" Type="varchar" MaxLength="50" />
+    <Property Name="OptionB" Type="varchar" MaxLength="50" />
+    <Property Name="OptionC" Type="varchar" MaxLength="50" />
+    <Property Name="OptionD" Type="varchar" MaxLength="50" />
+    <Property Name="OptionE" Type="varchar" MaxLength="50" />
+    <Property Name="OptionF" Type="varchar" MaxLength="50" />
+    <Property Name="number" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="QuestionnaireInfo">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="100" />
+    <Property Name="PaperType" Type="int" Nullable="false" />
+    <Property Name="State" Type="int" />
+    <Property Name="CreateTime" Type="datetime" />
+    <Property Name="CreateUserId" Type="int" />
+    <Property Name="PaperCount" Type="int" />
+  </EntityType>
+  <EntityType Name="QuestionnaireTypeInfo">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" />
+    <Property Name="describe" Type="varchar" MaxLength="200" />
+    <Property Name="state" Type="int" />
+    <Property Name="CreateTime" Type="datetime" />
+    <Property Name="MenuInfoId" Type="int" />
+    <Property Name="portrait" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“paper_Questionnaire.dbo.QuestionType”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="QuestionType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="typeName" Type="varchar" MaxLength="50" />
+    <Property Name="leven" Type="int" />
+    <Property Name="parentTypeId" Type="int" />
+    <Property Name="state" Type="int" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“paper_Questionnaire.dbo.QuestionUrl”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="QuestionUrl">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="Qid" />
+      <PropertyRef Name="url" />
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Qid" Type="int" Nullable="false" />
+    <Property Name="url" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“paper_Questionnaire.dbo.UserInfo”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="UserInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="userName" />
+      <PropertyRef Name="passWord" />
+      <PropertyRef Name="type" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Id_Guid" Type="varchar" MaxLength="50" />
+    <Property Name="userName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="passWord" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="type" Type="int" Nullable="false" />
+    <Property Name="RoleID" Type="int" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“paper_Questionnaire.dbo.UserRole”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="UserRole">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserID" Type="int" />
+    <Property Name="RoleTypeID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="paper_QuestionnaireModelStoreContainer">
+    <EntitySet Name="QuestionnaireDetailInfo" EntityType="Self.QuestionnaireDetailInfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="QuestionnaireInfo" EntityType="Self.QuestionnaireInfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="QuestionnaireTypeInfo" EntityType="Self.QuestionnaireTypeInfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MenuInfo" EntityType="Self.MenuInfo" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [MenuInfo].[MenuID] AS [MenuID], 
+    [MenuInfo].[MenuName] AS [MenuName], 
+    [MenuInfo].[State] AS [State], 
+    [MenuInfo].[ParentID] AS [ParentID], 
+    [MenuInfo].[Portrait] AS [Portrait], 
+    [MenuInfo].[UserId] AS [UserId], 
+    [MenuInfo].[RoleTypeID] AS [RoleTypeID], 
+    [MenuInfo].[leven] AS [leven]
+    FROM [dbo].[MenuInfo] AS [MenuInfo]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="QuestionType" EntityType="Self.QuestionType" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [QuestionType].[ID] AS [ID], 
+    [QuestionType].[typeName] AS [typeName], 
+    [QuestionType].[leven] AS [leven], 
+    [QuestionType].[parentTypeId] AS [parentTypeId], 
+    [QuestionType].[state] AS [state]
+    FROM [dbo].[QuestionType] AS [QuestionType]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="QuestionUrl" EntityType="Self.QuestionUrl" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [QuestionUrl].[id] AS [id], 
+    [QuestionUrl].[Qid] AS [Qid], 
+    [QuestionUrl].[url] AS [url], 
+    [QuestionUrl].[UserId] AS [UserId]
+    FROM [dbo].[QuestionUrl] AS [QuestionUrl]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="UserInfo" EntityType="Self.UserInfo" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [UserInfo].[Id] AS [Id], 
+    [UserInfo].[Id_Guid] AS [Id_Guid], 
+    [UserInfo].[userName] AS [userName], 
+    [UserInfo].[passWord] AS [passWord], 
+    [UserInfo].[type] AS [type], 
+    [UserInfo].[RoleID] AS [RoleID]
+    FROM [dbo].[UserInfo] AS [UserInfo]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="UserRole" EntityType="Self.UserRole" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [UserRole].[ID] AS [ID], 
+    [UserRole].[UserID] AS [UserID], 
+    [UserRole].[RoleTypeID] AS [RoleTypeID]
+    FROM [dbo].[UserRole] AS [UserRole]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

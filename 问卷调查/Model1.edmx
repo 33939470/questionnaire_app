@@ -1,0 +1,415 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="paper_QuestionnaireModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <!--生成过程中发现错误:
+警告 6002: 表/视图“paper_Questionnaire.dbo.MenuInfo”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+        <EntityType Name="MenuInfo">
+          <Key>
+            <PropertyRef Name="MenuID" />
+          </Key>
+          <Property Name="MenuID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="MenuName" Type="varchar" MaxLength="50" />
+          <Property Name="State" Type="int" />
+          <Property Name="ParentID" Type="int" />
+          <Property Name="Portrait" Type="varchar" MaxLength="50" />
+          <Property Name="UserId" Type="int" />
+          <Property Name="RoleTypeID" Type="int" />
+          <Property Name="leven" Type="int" />
+        </EntityType>
+        <EntityType Name="QuestionnaireDetailInfo">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PaperType" Type="int" Nullable="false" />
+          <Property Name="probType" Type="int" Nullable="false" />
+          <Property Name="State" Type="int" Nullable="false" />
+          <Property Name="QuestionnaireInfoId" Type="int" Nullable="false" />
+          <Property Name="Content" Type="text" />
+          <Property Name="Answer" Type="varchar" MaxLength="500" />
+          <Property Name="OptionA" Type="varchar" MaxLength="50" />
+          <Property Name="OptionB" Type="varchar" MaxLength="50" />
+          <Property Name="OptionC" Type="varchar" MaxLength="50" />
+          <Property Name="OptionD" Type="varchar" MaxLength="50" />
+          <Property Name="OptionE" Type="varchar" MaxLength="50" />
+          <Property Name="OptionF" Type="varchar" MaxLength="50" />
+          <Property Name="number" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="QuestionnaireInfo">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="100" />
+          <Property Name="PaperType" Type="int" Nullable="false" />
+          <Property Name="State" Type="int" />
+          <Property Name="CreateTime" Type="datetime" />
+          <Property Name="CreateUserId" Type="int" />
+          <Property Name="PaperCount" Type="int" />
+        </EntityType>
+        <EntityType Name="QuestionnaireTypeInfo">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="50" />
+          <Property Name="describe" Type="varchar" MaxLength="200" />
+          <Property Name="state" Type="int" />
+          <Property Name="CreateTime" Type="datetime" />
+          <Property Name="MenuInfoId" Type="int" />
+          <Property Name="portrait" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <!--生成过程中发现错误:
+警告 6002: 表/视图“paper_Questionnaire.dbo.QuestionType”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+        <EntityType Name="QuestionType">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="typeName" Type="varchar" MaxLength="50" />
+          <Property Name="leven" Type="int" />
+          <Property Name="parentTypeId" Type="int" />
+          <Property Name="state" Type="int" />
+        </EntityType>
+        <!--生成过程中发现错误:
+警告 6002: 表/视图“paper_Questionnaire.dbo.QuestionUrl”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+        <EntityType Name="QuestionUrl">
+          <Key>
+            <PropertyRef Name="id" />
+            <PropertyRef Name="Qid" />
+            <PropertyRef Name="url" />
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Qid" Type="int" Nullable="false" />
+          <Property Name="url" Type="varchar" MaxLength="500" Nullable="false" />
+          <Property Name="UserId" Type="int" Nullable="false" />
+        </EntityType>
+        <!--生成过程中发现错误:
+警告 6002: 表/视图“paper_Questionnaire.dbo.UserInfo”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+        <EntityType Name="UserInfo">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="userName" />
+            <PropertyRef Name="passWord" />
+            <PropertyRef Name="type" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Id_Guid" Type="varchar" MaxLength="50" />
+          <Property Name="userName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="passWord" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="type" Type="int" Nullable="false" />
+          <Property Name="RoleID" Type="int" />
+        </EntityType>
+        <!--生成过程中发现错误:
+警告 6002: 表/视图“paper_Questionnaire.dbo.UserRole”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+        <EntityType Name="UserRole">
+          <Key>
+            <PropertyRef Name="ID" />
+            
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UserID" Type="int" />
+          <Property Name="RoleTypeID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="paper_QuestionnaireModelStoreContainer">
+          <EntitySet Name="QuestionnaireDetailInfo" EntityType="Self.QuestionnaireDetailInfo" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="QuestionnaireInfo" EntityType="Self.QuestionnaireInfo" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="QuestionnaireTypeInfo" EntityType="Self.QuestionnaireTypeInfo" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="MenuInfo" EntityType="Self.MenuInfo" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [MenuInfo].[MenuID] AS [MenuID], 
+    [MenuInfo].[MenuName] AS [MenuName], 
+    [MenuInfo].[State] AS [State], 
+    [MenuInfo].[ParentID] AS [ParentID], 
+    [MenuInfo].[Portrait] AS [Portrait], 
+    [MenuInfo].[UserId] AS [UserId], 
+    [MenuInfo].[RoleTypeID] AS [RoleTypeID], 
+    [MenuInfo].[leven] AS [leven]
+    FROM [dbo].[MenuInfo] AS [MenuInfo]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="QuestionType" EntityType="Self.QuestionType" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [QuestionType].[ID] AS [ID], 
+    [QuestionType].[typeName] AS [typeName], 
+    [QuestionType].[leven] AS [leven], 
+    [QuestionType].[parentTypeId] AS [parentTypeId], 
+    [QuestionType].[state] AS [state]
+    FROM [dbo].[QuestionType] AS [QuestionType]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="QuestionUrl" EntityType="Self.QuestionUrl" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [QuestionUrl].[id] AS [id], 
+    [QuestionUrl].[Qid] AS [Qid], 
+    [QuestionUrl].[url] AS [url], 
+    [QuestionUrl].[UserId] AS [UserId]
+    FROM [dbo].[QuestionUrl] AS [QuestionUrl]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="UserInfo" EntityType="Self.UserInfo" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [UserInfo].[Id] AS [Id], 
+    [UserInfo].[Id_Guid] AS [Id_Guid], 
+    [UserInfo].[userName] AS [userName], 
+    [UserInfo].[passWord] AS [passWord], 
+    [UserInfo].[type] AS [type], 
+    [UserInfo].[RoleID] AS [RoleID]
+    FROM [dbo].[UserInfo] AS [UserInfo]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="UserRole" EntityType="Self.UserRole" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [UserRole].[ID] AS [ID], 
+    [UserRole].[UserID] AS [UserID], 
+    [UserRole].[RoleTypeID] AS [RoleTypeID]
+    FROM [dbo].[UserRole] AS [UserRole]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="paper_QuestionnaireModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="paper_QuestionnaireEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="MenuInfo" EntityType="paper_QuestionnaireModel.MenuInfo" />
+          <EntitySet Name="UserRole" EntityType="paper_QuestionnaireModel.UserRole" />
+          <EntitySet Name="UserInfoSet" EntityType="paper_QuestionnaireModel.UserInfo" />
+          <EntitySet Name="QuestionnaireInfo" EntityType="paper_QuestionnaireModel.QuestionnaireInfo" />
+          <EntitySet Name="QuestionType" EntityType="paper_QuestionnaireModel.QuestionType" />
+          <EntitySet Name="QuestionUrl" EntityType="paper_QuestionnaireModel.QuestionUrl" />
+          <EntitySet Name="QuestionnaireDetailInfo" EntityType="paper_QuestionnaireModel.QuestionnaireDetailInfo" />
+          <EntitySet Name="QuestionnaireTypeInfo" EntityType="paper_QuestionnaireModel.QuestionnaireTypeInfo" />
+        </EntityContainer>
+        <EntityType Name="MenuInfo">
+          <Key>
+            <PropertyRef Name="MenuID" />
+          </Key>
+          <Property Name="MenuID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="MenuName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="State" Type="Int32" />
+          <Property Name="ParentID" Type="Int32" />
+          <Property Name="Portrait" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="UserId" Type="Int32" />
+          <Property Name="RoleTypeID" Type="Int32" />
+          <Property Name="leven" Type="Int32" />
+        </EntityType>
+        <EntityType Name="UserRole">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserID" Type="Int32" />
+          <Property Name="RoleTypeID" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="UserInfo">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="userName" />
+            <PropertyRef Name="passWord" />
+            <PropertyRef Name="type" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Id_Guid" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="userName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="passWord" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="type" Type="Int32" Nullable="false" />
+          <Property Name="RoleID" Type="Int32" />
+        </EntityType>
+        <EntityType Name="QuestionnaireInfo">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="PaperType" Type="Int32" Nullable="false" />
+          <Property Name="State" Type="Int32" />
+          <Property Name="CreateTime" Type="DateTime" Precision="3" />
+          <Property Name="CreateUserId" Type="Int32" />
+          <Property Name="PaperCount" Type="Int32" />
+        </EntityType>
+        <EntityType Name="QuestionType">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="typeName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="leven" Type="Int32" />
+          <Property Name="parentTypeId" Type="Int32" />
+          <Property Name="state" Type="Int32" />
+        </EntityType>
+        <EntityType Name="QuestionUrl">
+          <Key>
+            <PropertyRef Name="id" />
+            <PropertyRef Name="Qid" />
+            <PropertyRef Name="url" />
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Qid" Type="Int32" Nullable="false" />
+          <Property Name="url" Type="String" Nullable="false" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="UserId" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="QuestionnaireDetailInfo">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PaperType" Type="Int32" Nullable="false" />
+          <Property Name="probType" Type="Int32" Nullable="false" />
+          <Property Name="State" Type="Int32" Nullable="false" />
+          <Property Name="QuestionnaireInfoId" Type="Int32" Nullable="false" />
+          <Property Name="Content" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Answer" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="OptionA" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="OptionB" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="OptionC" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="OptionD" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="OptionE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="OptionF" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="number" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="QuestionnaireTypeInfo">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="describe" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="state" Type="Int32" />
+          <Property Name="CreateTime" Type="DateTime" Precision="3" />
+          <Property Name="MenuInfoId" Type="Int32" />
+          <Property Name="portrait" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="paper_QuestionnaireModelStoreContainer" CdmEntityContainer="paper_QuestionnaireEntities">
+          <EntitySetMapping Name="MenuInfo">
+            <EntityTypeMapping TypeName="paper_QuestionnaireModel.MenuInfo">
+              <MappingFragment StoreEntitySet="MenuInfo">
+                <ScalarProperty Name="leven" ColumnName="leven" />
+                <ScalarProperty Name="RoleTypeID" ColumnName="RoleTypeID" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="Portrait" ColumnName="Portrait" />
+                <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+                <ScalarProperty Name="State" ColumnName="State" />
+                <ScalarProperty Name="MenuName" ColumnName="MenuName" />
+                <ScalarProperty Name="MenuID" ColumnName="MenuID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UserRole">
+            <EntityTypeMapping TypeName="paper_QuestionnaireModel.UserRole">
+              <MappingFragment StoreEntitySet="UserRole">
+                <ScalarProperty Name="RoleTypeID" ColumnName="RoleTypeID" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UserInfoSet">
+            <EntityTypeMapping TypeName="paper_QuestionnaireModel.UserInfo">
+              <MappingFragment StoreEntitySet="UserInfo">
+                <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+                <ScalarProperty Name="type" ColumnName="type" />
+                <ScalarProperty Name="passWord" ColumnName="passWord" />
+                <ScalarProperty Name="userName" ColumnName="userName" />
+                <ScalarProperty Name="Id_Guid" ColumnName="Id_Guid" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="QuestionnaireInfo">
+            <EntityTypeMapping TypeName="paper_QuestionnaireModel.QuestionnaireInfo">
+              <MappingFragment StoreEntitySet="QuestionnaireInfo">
+                <ScalarProperty Name="PaperCount" ColumnName="PaperCount" />
+                <ScalarProperty Name="CreateUserId" ColumnName="CreateUserId" />
+                <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+                <ScalarProperty Name="State" ColumnName="State" />
+                <ScalarProperty Name="PaperType" ColumnName="PaperType" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="QuestionType">
+            <EntityTypeMapping TypeName="paper_QuestionnaireModel.QuestionType">
+              <MappingFragment StoreEntitySet="QuestionType">
+                <ScalarProperty Name="state" ColumnName="state" />
+                <ScalarProperty Name="parentTypeId" ColumnName="parentTypeId" />
+                <ScalarProperty Name="leven" ColumnName="leven" />
+                <ScalarProperty Name="typeName" ColumnName="typeName" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="QuestionUrl">
+            <EntityTypeMapping TypeName="paper_QuestionnaireModel.QuestionUrl">
+              <MappingFragment StoreEntitySet="QuestionUrl">
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="url" ColumnName="url" />
+                <ScalarProperty Name="Qid" ColumnName="Qid" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="QuestionnaireDetailInfo">
+            <EntityTypeMapping TypeName="paper_QuestionnaireModel.QuestionnaireDetailInfo">
+              <MappingFragment StoreEntitySet="QuestionnaireDetailInfo">
+                <ScalarProperty Name="number" ColumnName="number" />
+                <ScalarProperty Name="OptionF" ColumnName="OptionF" />
+                <ScalarProperty Name="OptionE" ColumnName="OptionE" />
+                <ScalarProperty Name="OptionD" ColumnName="OptionD" />
+                <ScalarProperty Name="OptionC" ColumnName="OptionC" />
+                <ScalarProperty Name="OptionB" ColumnName="OptionB" />
+                <ScalarProperty Name="OptionA" ColumnName="OptionA" />
+                <ScalarProperty Name="Answer" ColumnName="Answer" />
+                <ScalarProperty Name="Content" ColumnName="Content" />
+                <ScalarProperty Name="QuestionnaireInfoId" ColumnName="QuestionnaireInfoId" />
+                <ScalarProperty Name="State" ColumnName="State" />
+                <ScalarProperty Name="probType" ColumnName="probType" />
+                <ScalarProperty Name="PaperType" ColumnName="PaperType" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="QuestionnaireTypeInfo">
+            <EntityTypeMapping TypeName="paper_QuestionnaireModel.QuestionnaireTypeInfo">
+              <MappingFragment StoreEntitySet="QuestionnaireTypeInfo">
+                <ScalarProperty Name="portrait" ColumnName="portrait" />
+                <ScalarProperty Name="MenuInfoId" ColumnName="MenuInfoId" />
+                <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+                <ScalarProperty Name="state" ColumnName="state" />
+                <ScalarProperty Name="describe" ColumnName="describe" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="无" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
